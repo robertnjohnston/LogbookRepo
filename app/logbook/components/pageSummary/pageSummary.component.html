@@ -1,0 +1,30 @@
+<table>
+    <tr>
+        <td class="head">Page </td>
+        <td>&nbsp;</td>
+        <td class="textleft bold">{{pageSummary.page}}</td>
+        <td class="head textright">Flights</td>
+        <td class="head textright">Duration</td>
+        <td>&nbsp;</td>
+        <td class="head textright">Flights</td>
+        <td class="head textright">Duration</td>
+    </tr>
+    <tr>
+        <td colspan="2">&nbsp;</td>
+        <td class="head textright">Total</td>
+        <td class="textright b pr">{{pageSummary.totalLaunch}}</td>
+        <td class="textright b pr">{{pageSummary.totalTime | timeFilter: filter}}</td>
+        <td class="head textright">P1 Multi</td>
+        <td class="textright b pr">{{pageSummary.p1mLaunch}}</td>
+        <td class="textright b pr">{{pageSummary.p1mTime | timeFilter: filter}}</td>
+    </tr>
+    <tr>
+        <td colspan="2">&nbsp;</td>
+        <td class="head ra">P1 Solo</td>
+        <td class="textright b pr">{{pageSummary.p1sLaunch}}</td>
+        <td class="textright b pr">{{pageSummary.p1sTime | timeFilter: filter}}</td>
+        <td class="head textright">P2</td>
+        <td class="textright b pr">{{pageSummary.p2Launch}}</td>
+        <td class="textright b pr">{{pageSummary.p2Time | timeFilter: filter}}</td>
+    </tr>
+</table>

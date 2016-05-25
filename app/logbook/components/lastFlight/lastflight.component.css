@@ -1,0 +1,5 @@
+td {border: 1px #C0C0C0 solid; text-align: center;}
+td.left { border-left:none;}
+td.right { border-right:none;}
+td.pl {padding-left:1em;}
+td.pr {padding-right:3em;}

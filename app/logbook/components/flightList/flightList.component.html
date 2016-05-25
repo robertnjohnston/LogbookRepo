@@ -1,0 +1,43 @@
+<div class="panel panel-primary">
+    <div class="panel-body">
+        <div class="row">
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr class="h">
+                            <th colspan="7">{{pageTitle}}</th>
+                        </tr>
+                    </thead> 
+                    <tbody>
+                        <tr>
+                            <td class="left bold">Flight</td>
+                            <td class="bold">Date</td>
+                            <td class="bold">Aircraft</td>
+                            <td class="bold">Airfield</td>
+                            <td class="bold">Duration</td>
+                            <td class="bold">Distance</td>
+                            <td class="right bold">Declared</td>
+                        </tr>
+                        <tr *ngFor="#flight of flights" (click)=selectRow(flight.number) class="data">
+                            <td class="left">{{flight.number}}</td>
+                            <td>{{flight.date}}</td> 
+                            <td>{{flight.aircraft}} ({{flight.registration}})-{{flight.crewPosition}}</td>
+                            <td>{{flight.airfield}}</td>
+                            <td>{{flight.duration | timeFilter: filter}}
+                            <td>{{flight.distance}}</td>                            
+                            <td class="right">{{flight.declared}}</td>                                                                                                             
+                        </tr>                                                                            
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="7" class="left right h">
+                                <lb-pagesummary>Loading...</lb-pagesummary>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+             </div>
+        </div>                                                                                 
+    </div>
+</div>
+

@@ -1,0 +1,41 @@
+<div class="panel panel-primary">
+    <div class="panel-body">
+        <div class="row">
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr class="h">
+                            <th colspan="8">{{pageTitle}}</th>
+                        </tr>
+                    </thead> 
+                    <tbody>
+                        <tr>
+                            <td class="left textleft bold">Number</td>
+                            <td>{{lastFlight.number}}</td>
+                            <td class="textleft bold">Date</td>
+                            <td class="right">{{lastFlight.date}}</td>
+                        </tr>
+                        <tr>
+                            <td class="left textleft bold">Aircraft</td>
+                            <td>{{lastFlight.aircraft}} ({{lastFlight.registration}})</td>
+                            <td class="textleft bold">Crew</td>
+                            <td class="right">{{lastFlight.crewPosition}}</td>
+                        </tr>
+                        <tr>
+                            <td class="left textleft bold">Airfield</td>
+                            <td>{{lastFlight.airfield}}</td>   
+                            <td class="textleft bold">Duration</td>
+                            <td class="right">{{lastFlight.duration | timeFilter: filter}}</td>
+                        </tr>   
+                        <tr>
+                            <td class="left textleft bold">Declared</td>
+                            <td>{{lastFlight.declared}}</td>   
+                            <td class="textleft bold">Distance</td>
+                            <td class="right">{{lastFlight.distance}}</td>
+                        </tr>                                                                            
+                    </tbody>
+                </table>
+             </div>
+        </div>                                                                                 
+    </div>
+</div>

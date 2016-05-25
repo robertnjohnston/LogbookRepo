@@ -1,0 +1,43 @@
+<div class="panel panel-primary">
+    <div class="panel-body">
+        <div class="row">
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr class="h">
+                            <th colspan="8">{{pageTitle}}</th>
+                        </tr>
+                    </thead> 
+                    <tbody>
+                        <tr>
+                            <td colspan="2" class="left bold">Total</td>
+                            <td colspan="2" class="bold">P1 Solo</td>
+                            <td colspan="2" class="bold">P1 Multi</td>
+                            <td colspan="2" class="right bold">P2</td>
+                        </tr>
+                        <tr>
+                            <td class="left bold">Launch</td>
+                            <td class="bold">Hours</td>
+                            <td class="bold">Launch</td>
+                            <td class="bold">Hours</td>
+                            <td class="bold">Launch</td>
+                            <td class="bold">Hours</td>
+                            <td class="bold">Launch</td>
+                            <td class="right bold">Hours</td>
+                        </tr>
+                        <tr>
+                            <td class="left">{{summary.totalLaunch}}</td>
+                            <td>{{summary.totalTime | timeFilter: filter}}</td>
+                            <td>{{summary.p1sLaunch}}</td>
+                            <td>{{summary.p1sTime | timeFilter: filter}}</td>
+                            <td>{{summary.p1mLaunch}}</td>
+                            <td>{{summary.p1mTime  | timeFilter: filter}}</td>
+                            <td>{{summary.p2Launch}}</td>
+                            <td class="right">{{summary.p2Time | timeFilter: filter}}</td>
+                        </tr>                                                    
+                    </tbody>
+                </table>
+             </div>
+        </div>                                                                                 
+    </div>
+</div>
